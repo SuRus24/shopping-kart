@@ -1,16 +1,21 @@
-# React + Vite
+This is a shopping kart application I have built as a part of my React Learning tenure at russell investments . This was my first React standalone project . and in this i invested around 1 week . 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project consist mostly the use of context api and routing . and the normal state and hooks , 
 
-Currently, two official plugins are available:
+the data we are fetching from a demo product api that is open . 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+from that i am storing data into a products which is a state and has setter setProducts
 
-## React Compiler
+products is an object of key value pairs , where key is id and value are objects which contain product data for that particular product data. 
+same is with orderproducts and myorders . 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+so the data moves from 
 
-## Expanding the ESLint configuration
+API -> FILTEREDPRODUCTS -- FILTERATION --> PRODUCTS --> ORDERPRODUCTS -->MYORDERS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+THERE IS A SEPERATE CONTEXT FOR PAYMENTS , PRODUCTS PAGE , AND ORDERKART PAGE 
+
+THERE IS ALSO A SEARCH FUNCTIONALITY. 
+
+
+
